@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gupter:wght@400;500;700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+:root{
+--color-1:#000000;
+--color-2:#ffffff;
+--color-3:#e5e900;
+--color-4:#50af9f;
+--fuente-embed: "Bebas Neue", sans-serif;
+--fuente-gupter: "Slabo 27px", serif;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.header{
+    
+    padding: 3% 0% 0% 14% ;
+    
+}
+
+.header_botones{
+    display: flex;
+    gap: 50px;
+    font-family: var(--fuente-embed);
+    font-size: 1.25rem;
+    color: var(--color-2);
+    text-decoration: none;
+}
+
+.h-botones-perso{
+    text-decoration: none;
+    color: var(--color-1);
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35) ;
+}
+
+.h-botones-perso2{
+    text-decoration: none;
+    color: var(--color-2);
+    background-color: #50af9f;
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35) ;
+}
+
+.h-botones-perso:hover{
+    background-color: var(--color-4);
+    color: var(--color-2);
+}
+
+body{
+    background-color: var(--color-2);
+}
+
+.organizacion_general{
+display: flex;
+align-items: center;
+justify-content: space-between; 
+}
+
+
+    .organizacion_info{
+        color: var(--color-1) ;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+        .Titulo-1{
+            font-family: var(--fuente-embed);
+            font-size: 3rem;
+            text-align: center;
+        }
+        .Titulo-dest{
+            color: var(--color-4);
+            font-weight: 400;
+        }
+        .parrafo{
+            margin: 0 0 0 30px;
+            font-family: var(--fuente-embed); 
+            font-size: 1.25rem;  
+            text-align: center;  
+            width: 80%;
+            
+        }
+        .titulo-redes{
+            font-family: var(--fuente-embed);
+            font-weight: 550;
+            border: 1px solid var(--color-4);
+            border-radius: 9px;
+            padding: 15px;
+            font-size: 1.5rem;
+            
+        }
+            .botones{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 30px;
+            }
+
+            
+                .presentacion-botones{
+                    display: flex;
+                    font-family: var(--fuente-embed);
+                    font-size: 1.1rem;
+                    border-radius: 15px;
+                    padding:  10px 10px;
+                    width: 220%;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 13px;
+                    text-decoration: none;
+                    color: var(--color-1);
+                    box-shadow: 0 2px 6px var(--color-1) ;
+                    
+                }
+                .presentacion-botones:hover{
+                    background-color: var(--color-4);
+                    color: var(--color-2);
+                    cursor: pointer;
+                    border-radius: 15px;
+                }
+
+.imagen{
+    width: 60%;
+}
+
+.footer{
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 20px;
+    font-family: var(--fuente-gupter);
+    text-align: center;
+    font-size: 1.25rem; 
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+
+    .header{
+        padding: 5% ;
+    }
+
+    .header_botones{
+        justify-content: center;
+    }
+
+    .organizacion_general{
+        flex-direction: column-reverse; 
+    }
+    .parrafo{
+        margin: 0 5% 0 5%;
+    }
+
+    .footer{
+        margin: 5% 0 0 0;
+    }
+}
+
+
